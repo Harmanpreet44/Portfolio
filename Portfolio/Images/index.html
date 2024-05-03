@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon...</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Define different font styles */
+        @keyframes changeFont {
+            0% { font-family: 'Arial', sans-serif; }
+            20% { font-family: 'Times New Roman', serif; }
+            40% { font-family: 'Courier New', monospace; }
+            60% { font-family: 'Georgia', serif; }
+            80% { font-family: 'Verdana', sans-serif; }
+            100% { font-family: 'Tahoma', sans-serif; }
+        }
+
+        /* Apply animation to h1 */
+        h1 {
+            animation: changeFont 8s infinite; /* Adjust duration and timing as needed */
+        }
+    </style>
+</head>
+<body>
+  <h1>Coming Soon.......</h1>
+  <form id="search-form">
+    <input type="text" id="search-box" placeholder="Waiting?. Look up CATS!!!">
+    <button>Search</button>
+  </form>
+  <div id="search-result"></div>  
+  <button id="show-more-btn">Show more</button>
+<script src="script.js"></script>
+</body>
+</html>

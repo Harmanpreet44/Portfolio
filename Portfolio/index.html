@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0ac3e256b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi there, I'm<br> <span>Harmanpreet</span></h1>
+            </div>
+        </div>
+    </div>
+   <!-----------------about-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/me.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Harmanpreet Singh, a Computer Science grad from Sheridan College. I specialize in web development, focusing on JavaScript, React, and Angular. Proficient in Java, C#, and C++, alongside HTML, CSS, and Bootstrap. I prioritize user-friendly interfaces, performance, and scalability. Strong in communication with customer service experience.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>App Development</span><br>Developing Apps for IOS/Andoriod</li>
+                                <li><span>Customer Service</span><br>Communication and interpersonal abilities</li>
+                                <li><span>Database Management</span><br>Ability to modify and maintain databases</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Mar,2024-Present</span><br>Web Designer at Stream Infotech.</li>
+                                <li><span>Apr,2022-May,2023</span><br>Data Entry Associate at Farrex Freight Systems Ltd.</li>
+                                <li><span>May,2023-Present</span><br>Ecommerce Associate at Walmart.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>Computer programming at Sheridan College Institute of Technology and Advanced Learning.</li>
+                                <li><span>2021</span><br>Certificate in Computer Fundamentals & Programming at Stream Infotech.</li>
+                                <li><span>Mar,2021</span><br>High School Diploma at Dav School.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------------services-------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code fa-beat-fade"></i>
+                <h2>Web Design</h2>
+                <p>Harnessing the power of JavaScript, React, Angular,
+                     and a suite of languages including Java, C#, and C++,
+                    I create innovative, user-centric websites. Proficient in HTML, CSS, and Bootstrap,
+                    I craft visually stunning interfaces that engage and delight users.</p>
+               
+            </div>
+            <div>
+                <i class="fa-brands fa-uikit fa-beat-fade"></i>
+                <h2>UI/UX Design</h2>
+                <p>Specializing in UI/UX design,
+                    I blend creativity with technical expertise
+                    to create intuitive and visually appealing interfaces.
+                    Proficient in leveraging design tools and methodologies,
+                    I focus on enhancing user interactions and elevating usability.</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-rocket fa-beat-fade"></i>
+                <h2>App Design</h2>
+                <p>Specializing in app design,
+                    I merge creativity with technical acumen to craft intuitive and visually
+                    stunning interfaces. Proficient in UI/UX principles and design tools,
+                    I focus on delivering seamless user experiences.</p>
+                
+            </div>
+           <!--<div>
+                <h2>Customer Service</h2>
+                <p>I understand the pivotal role exceptional customer service plays in shaping a brand.
+                 My commitment lies in going above and beyond to ensure customer satisfaction. 
+                 I prioritize active listening, empathy, and swift, effective solutions to meet and exceed customer expectations.
+                <br>Skills and Expertise:<br>
+                With a foundation in technology and a keen eye for detail, 
+                I merge technical knowledge with interpersonal skills to troubleshoot effectively and communicate
+                 complex ideas in an accessible manner. My experience has equipped me with adaptability and patience, essential traits
+                 in addressing diverse customer needs.</p>
+                <a href="#">learn more</a>
+            </div>-->
+            <div>
+                <i class="fa-solid fa-server fa-beat-fade"></i>
+                <h2>Database Management</h2>
+                <p>With a profound understanding of database systems, including SQL and NoSQL, I specialize in designing, implementing,
+                 and optimizing databases to ensure data integrity, security, and performance. Proficient in database languages like MySQL,
+                 MongoDB, and Oracle, I am equipped to handle diverse data management needs.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------portfolio-------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work.png">
+                <div class="layer">
+                    <h3>Cooki0</h3>
+                    <p>Cooki0, your culinary companion in the digital world!</p>
+                    <a href="/cook.io/index.html"><i class="fa-solid fa-link fa-beat-fade"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work1.jpg">
+                <div class="layer">
+                    <h3>Notekeeper</h3>
+                    <p>NoteKeeper: Because even geniuses forget the milk!</p>
+                    <a href="/note/Notekeeper/index.html"><i class="fa-solid fa-link fa-beat-fade"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/3.jpg">
+                <div class="layer">
+                    <h3>Under Construction......</h3>
+                    <p>While I work on my upcoming project. we've got something special to help you beat boredom. </p>
+                    <a href="/Images/index.html"><i class="fa-solid fa-link fa-beat-fade"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane fa-beat"></i>Harmanpreetsingh030302@gmail.com</p>
+                <p><i class="fa-solid fa-phone fa-beat"></i>4379896420</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/harmanpreetsingh_03/"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+                    <a href="https://www.linkedin.com/in/harmanpreet-singh4444"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
+                    <a href="https://github.com/Harmanpreet44"><i class="fa-brands fa-github fa-bounce"></i></a>
+                </div>  
+                <a href="Images/Resume_Harman-1.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> by Harmanpreet.</p>
+    </div>
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw4wL1v9DJsSMgl_0wQ3CxiaOItCaWh4huKYbN6BAXmJqQHGO4iCdJu6xQkLEuZc7pY/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+    form.reset()})
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
